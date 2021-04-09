@@ -1,0 +1,247 @@
+<html>
+  <head>
+    <meta name = "Author" content="">
+    <meta name = "Keywords" content="">
+    <meta name = "Description" content="">
+    
+    <link rel="stylesheet" href="app.component.css">
+
+    <script>
+      function stickyMenu(){
+        var sticky = document.getElementById('sticky')
+        if (window.pageYOffset > 220){
+          sticky.classList.add('sticky');
+        }
+          else{
+            sticky.classList.remove('sticky');
+        }
+      }
+
+      window.onscroll = function(){
+        stickyMenu();
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="parallax">
+      <div class="page-title">Eat Fresh</div>
+    </div>
+    <div class="menu" id="sticky">
+      <ul class="menu-ul">
+        <a href="#" class="a-menu"><li>Home</li></a>
+        <a href="#" class="a-menu"><li>Deals</li></a>
+        <a href="#" class="a-menu"><li>Vegetables</li></a>
+        <a href="#" class="a-menu"><li>Fruits</li></a>
+        <a href="#" class="a-menu"><li>Beverages</li></a>
+        <a href="#" class="a-menu"><li>Cart</li></a>
+      </ul>
+
+      <div class = "search-box">
+        <form>
+          <input type="text" placeholder="Search..." name="search" class="search-input"/>
+          <button type="submit"> <i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Home Page-->
+
+    <div class="container">
+      <a href="#vegetables">
+        <div class="categories">
+          <img src="../assets/images/vege.jpg " class="item-image"/>
+          <div class="image-title">Vegetables</div>
+        </div>
+      </a>
+
+      <a href="#fruits">
+        <div class="categories">
+          <img src="../assets/images/fruits.jpg " class="item-image"/>
+          <div class="image-title">Fruits</div>
+        </div>
+      </a>
+
+      <a href="#beverages">
+        <div class="categories">
+          <img src="../assets/images/gas.png " class="item-image"/>
+          <div class="image-title">Beverages</div>
+        </div>
+      </a>
+    </div>
+     <!-- Home Page Ends-->
+
+
+     <!-- Deals Section-->
+     <div class="deals-container" id="deals">
+       <div class="parallax">
+         <div class="title">DEALS</div>
+       </div>
+         <div class="deal">
+           Save 20% on min-purchase of RM100 on Vegetables <br/>
+           <button class="coupon-btn">Add Coupon</button>
+         </div>
+         <div class="deal">
+          Save 10% on min-purchase of RM100 on Fruits <br/>
+          <button class="coupon-btn">Add Coupon</button>
+        </div>
+        <div class="deal">
+          Save 15% on min-purchase of RM100 on Beverages <br/>
+          <button class="coupon-btn">Add Coupon</button>
+        </div>
+       </div>
+     
+
+     <!-- Deals Section Ends-->
+
+      <!-- Vege Section Begins-->
+      <div class="deals-container" id="vegetables">
+        <div class="parallax">
+          <div class="title">Vegetables</div>
+        </div>
+        <div class="items">
+          <div class="images">
+            <img src="../assets/images/lettuce.jpg" class="item-image-size"/>
+          </div>
+          <div class="description">
+            <b>Iceberg Lettuce</b><br/>
+            <div class="item-select">
+              Price : RM 2.90 / 250 Grams
+            </div>
+            <label>Qty:</label>
+            <select class="item-select">
+              <option>250grams</option>
+              <option>500grams</option>
+              <option>700grams</option>
+              <option>1000grams</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+          </div>
+        </div>
+        <div class="items">
+          <div class="images">
+            <img src="../assets/images/Tomato.jpg" class="item-image-size"/>
+          </div>
+          <div class="description">
+            <b>Tomato</b><br/>
+            <div class="item-select">
+              Price : RM 2.90 / 250 Grams
+            </div>
+            <label>Qty:</label>
+            <select class="item-select">
+              <option>250grams</option>
+              <option>500grams</option>
+              <option>700grams</option>
+              <option>1000grams</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+          </div>
+        </div>
+        <div class="items">
+          <div class="images">
+            <img src="../assets/images/onion.webp" class="item-image-size"/>
+          </div>
+          <div class="description">
+            <b>Yellow Onions</b><br/>
+            <div class="item-select">
+              Price : RM 2.90 / 250 Grams
+            </div>
+            <label>Qty:</label>
+            <select class="item-select">
+              <option>250grams</option>
+              <option>500grams</option>
+              <option>700grams</option>
+              <option>1000grams</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- Vege Section Ends-->
+
+      <!-- Fruit Section starts-->
+
+      <div class="deals-container" id="vegetables">
+        <div class="parallax">
+          <div class="title">Fruits</div>
+        </div>
+        <div class="items">
+          <div class="images">
+            <img src="../assets/images/lettuce.jpg" class="item-image-size"/>
+          </div>
+          <div class="description">
+            <b>Apple</b><br/>
+            <div class="item-select">
+              Price : RM 2.90 / 250 Grams
+            </div>
+            <label>Qty:</label>
+            <select class="item-select">
+              <option>250grams</option>
+              <option>500grams</option>
+              <option>700grams</option>
+              <option>1000grams</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+          </div>
+        </div>
+        <div class="items">
+          <div class="images">
+            <img src="../assets/images/Tomato.jpg" class="item-image-size"/>
+          </div>
+          <div class="description">
+            <b>Dragon Fruit</b><br/>
+            <div class="item-select">
+              Price : RM 2.90 / 250 Grams
+            </div>
+            <label>Qty:</label>
+            <select class="item-select">
+              <option>250grams</option>
+              <option>500grams</option>
+              <option>700grams</option>
+              <option>1000grams</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+          </div>
+        </div>
+        <div class="items">
+          <div class="images">
+            <img src="../assets/images/onion.webp" class="item-image-size"/>
+          </div>
+          <div class="description">
+            <b>Oranges</b><br/>
+            <div class="item-select">
+              Price : RM 2.90 / 250 Grams
+            </div>
+            <label>Qty:</label>
+            <select class="item-select">
+              <option>250grams</option>
+              <option>500grams</option>
+              <option>700grams</option>
+              <option>1000grams</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fruit Section Ends-->
+      
+      
+
+      <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "8d0e39e5-3c8b-498c-af0d-1ac31b213cd4", // The ID of this integration.
+            region: "au-syd", // The region your integration is hosted in.
+            serviceInstanceID: "399428c7-d699-4325-8160-6586cf299754", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+          document.head.appendChild(t);
+        });
+      </script>
+
+
+  </body>
+</html>
